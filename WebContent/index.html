@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+</head>
+<body>
+Hello World
+
+<script type="text/javascript">
+	
+	function getQueryString(name){
+	     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	     var r = window.location.search.substr(1).match(reg);
+	     if(r!=null)return  unescape(r[2]); return null;
+	}
+	var code=getQueryString("code");
+	var phoneNum=getQueryString("m");
+//	var param={
+		
+//			"code":code,
+//			"phoneNum":m
+//	};
+	//alert(param);
+	alert(code);
+	alert(phoneNum);
+	//var All_Url="http://192.168.0.112:8011/";
+/**
+ *
+	$.ajax({
+	   url: All_Url + 'user/getAccessTokeByReturnUrl',
+	   //url:"https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx0667d13434a471a0&secret=98b140251296318bcd32cf22a5b2844e&code=011u0ngR0y5g2e2RJphR0GujgR0u0ng-&grant_type=authorization_code",
+	    data: param,
+	    type: 'POST',
+	    timeout: 10000,
+	    success: function (data) {
+	    	console.log(data);
+	    		aleat("1234");
+	    },
+	    error: function () {
+           // $.toast('网络连接超时，请重试',"forbidden");
+           //开启登录按钮
+        }
+    });
+  */
+  
+ // $.post("user/getAccessTokeByReturnUrl",JSON.stringify(param),
+	//	  function(data){
+			//location.href =data;
+			
+		//		$.get(data,function(data){
+					
+			//	});
+			
+	  		//});
+  
+  
+</script>
+</body>
+</html>

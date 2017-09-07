@@ -1,0 +1,10 @@
+微信通知回调 文档https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=9_7
+该链接是通过【统一下单API】中提交的参数notify_url设置，如果链接无法访问，商户将无法接收到微信通知。
+
+
+回调地址：NotifiesController.java     NotifiesController/paid
+
+payNotifyUrl=www.tokeys.com/NotifiesController/paid
+
+充值回掉
+购买商品

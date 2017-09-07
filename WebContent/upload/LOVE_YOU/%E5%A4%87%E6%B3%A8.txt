@@ -1,0 +1,7 @@
+服务器地址：121.40.198.78
+SFTP账户
+用户名：root   
+密码：guogongjuN821624
+FTP账户
+帐户名：default     
+密码：14B6AdajKw5  
